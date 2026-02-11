@@ -20,7 +20,7 @@ Aplicação simples de anotações, desenvolvida como teste técnico, utilizando
 * Docker Compose
 
 ## 📦 Estrutura do Projeto
-````
+````shell
 notes-app/
 ├── backend/              # API Rails
 │   ├── app/
@@ -53,18 +53,18 @@ notes-app/
 
 ### Criar anotação
 * POST /api/v1/notes
-````
+````json
 {
     "note": {
-    "title": "Minha anotação",
-    "content": "Conteúdo opcional"
+        "title": "Minha anotação",
+        "content": "Conteúdo opcional"
     }
 }
 ````
 #### ⚠️ Formato de Erros
 
 Em caso de erro de validação, a API retorna:
-````
+````json
 {
     "errors": [ "Título não pode ficar em branco"]
 }
@@ -74,8 +74,9 @@ Em caso de erro de validação, a API retorna:
 Os testes utilizam RSpec, com request specs e model specs, focando no comportamento real da API.
 
 * Rodar os testes
+```shell
 docker compose -f docker-compose.dev.yml exec backend bundle exec rspec
-
+```
 
 * Resultado esperado:
   * X examples, 0 failures 
@@ -120,4 +121,4 @@ Gabriel Flauzino Mota
 Para consulta a cobertura [este arquivo num browse](coverage/index.html) foi utilizado a gem coverage
 Aqui está o painel principal:
 
-![coverage/index.html](coverage.png)
+![coverage/index.html](backend/coverage.png)
