@@ -22,7 +22,7 @@ Aplicação simples de anotações, desenvolvida como teste técnico, utilizando
 ## 📦 Estrutura do Projeto
 ````shell
 notes-app/
-├── backend/              # API Rails
+├── backend/              # API Rails 8 + Ruby 3
 │   ├── app/
 │   │   ├── controllers/
 │   │   ├── models/
