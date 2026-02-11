@@ -1,0 +1,10 @@
+pt-BR:
+  activerecord:
+    models:
+      note: "Nota"
+
+    # 1. TRADUZ O NOME DA COLUNA
+    attributes:
+      note:
+        title: "Título"
+        context: "Conteúdo"
