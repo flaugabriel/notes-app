@@ -39,10 +39,10 @@ notes-app/
 * Docker
 * Docker Compose (v2+)
 * Subir a aplicação
-* docker compose -f docker-compose.dev.yml up --build
+    * ```` docker compose -f docker-compose.dev.yml up --build ````
 * Após subir:
-* Frontend: http://localhost:5173
-* Backend (API): http://localhost:3000
+    * Frontend: http://localhost:5173
+    * Backend (API): http://localhost:3000
 
 ## 🔗 Endpoints da API
 
